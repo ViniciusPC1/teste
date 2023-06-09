@@ -1,0 +1,126 @@
+/*Começo*/
+/*Corpo*/
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+/*Div principal, feita para organização*/
+.principal{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+
+/*Bola verde*/
+.bola1{
+    margin:0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: #19A68C;
+    border-radius: 50%;
+    float: left;    
+    margin-left: 175px;
+    margin-top:80px;
+    position: absolute;
+
+    /*parametros da animação*/
+    animation-name: mvb1;
+    animation: mvb1 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+
+}
+
+/*animação - Bola verde*/
+@keyframes mvb1{
+    0%{left:  175px; top: 165px;}
+    25%{left: 175px; top: 255px;}
+    50%{left: 75px; top: 255px;}
+    75%{left: 75px; top: 165px;}
+    100%{left: 175px; top: 165px;}
+}
+
+/*Bola vermelha*/
+.bola2{
+    margin:0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: #F63D3A;
+    border-radius: 50%;
+    float: right;
+    margin-left: 350px;
+    margin-top: 170px;
+    position: absolute;
+
+    /*parametros da animação*/
+    animation-name: mvb2;
+    animation: mvb2 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+/*animação - Bola vermelha*/
+@keyframes mvb2{
+    0%{left: 0px; top: 165px;}
+    25%{left:-100px; top: 165px;}
+    50%{left:-100px; top: 75px;}
+    75%{left: 0px; top: 75px;}
+    100%{left: 0px; top: 165px;}
+}
+
+/*Bola laranja*/
+.bola3{
+    margin:0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: #FDA543;
+    border-radius: 50%;
+    float: left;
+    margin-left: 75px;
+    margin-top: 170px;
+    position: absolute;
+
+    /*parametros da animação*/
+    animation-name: mvb3;
+    animation: mvb3 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+/*animação - Bola laranja*/
+@keyframes mvb3{
+    0%{left: 175px; top: 165px;}
+    25%{left: 175px; top: 75px;}
+    50%{left: 275px; top: 75px;}
+    75%{left: 275px; top: 165px;}
+    100%{left: 175px; top: 165px;}
+}
+
+/*Bola cinza*/
+.bola4{
+    margin:0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: #193B48;
+    border-radius: 50%;
+    float: right;
+    margin-top: 80px;
+    margin-left: 70px;
+    position: absolute;
+    
+    /*parametros da animação*/
+    animation-name: mvb4;
+    animation: mvb4 2s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+/*animação - Bola laranja*/
+@keyframes mvb4{
+    0%{left: 180px; top: 165px;}
+    25%{left: 280px; top: 165px;}
+    50%{left: 280px; top: 255px;}
+    75%{left: 180px; top: 255px;}
+    100%{left: 180px; top: 165px;}
+   
+}
+/*Fim*/
